@@ -13,23 +13,22 @@ func main() {
 	}
 
 	// Adding elements - not in root
+	n.Add(1, -1)
+	n.Add(2, -1)
 	n.Add(3, -1)
 	n.Add(4, -1)
-	n.Add(5, -1)
-	n.Add(6, -1)
-	n.Add(7, -1)
-	n.Add(8, -1)
-	n.Add(9, -1)
+	n.Add(3, -1)
+	n.Add(2, -1)
+	n.Add(1, -1)
 	n.Add(111, 3) // 0 indexed
 
 	// Delete by value and index
 	_, n = n.DeleteVal(123)
-	_, _, n = n.DeleteIndex(6)
+	_, _, n = n.DeleteIndex(2)
 
 	// Insert at root
-	n = n.Add(32, 0) // Need to update root when inserting at 0
-	n = n.Add(36, 4)
-	n = n.Add(22, 4)
+	n = n.Add(7, 0) // Need to update root when inserting at 0
+	n = n.Add(7, -1)
 
 	// Printing result
 	fmt.Println("Length:", n.Length()) // Lenght calculation
@@ -38,4 +37,6 @@ func main() {
 	fmt.Print("Finding element: ")
 	fmt.Println(n.Find(-9))
 	fmt.Println("Middle element:", n.GetMid()) // Getting the middle element
+	fmt.Println("Palindrome check:", n.CheckPalindrome())
+	n.Print()
 }
