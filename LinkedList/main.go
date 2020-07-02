@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	linkedlist "github.com/Boom0027/data_structure/LinkedList/lib"
+	linkedlist "github.com/Boom0027/go_data_structures/LinkedList/lib"
 )
 
 func main() {
@@ -38,5 +38,7 @@ func main() {
 	fmt.Println(n.Find(-9))
 	fmt.Println("Middle element:", n.GetMid()) // Getting the middle element
 	fmt.Println("Palindrome check:", n.CheckPalindrome())
+	elem, found := n.FromEnd(3)
+	fmt.Println("4th element from the end:", elem, "Found:", found)
 	n.Print()
 }

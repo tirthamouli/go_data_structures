@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	library "github.com/Boom0027/data_structure/Array/lib"
+	library "github.com/Boom0027/go_data_structures/Array/lib"
 )
 
 func main() {
