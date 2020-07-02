@@ -17,15 +17,3 @@ func RotateFirst(arr []int, n int) {
 		arr[index] = aux[i]
 	}
 }
-
-// // RotateSecond - Another method of rotating, needs no aux
-// func RotateSecond(arr []int, n int) {
-// 	for i := 0; i < n; i++ {
-// 		prev := arr[i]
-// 		fmt.Println("i", i, prev)
-// 		for j := len(arr) - n + i; j >= i; j -= n {
-// 			fmt.Println("j", j)
-// 			prev, arr[j] = arr[j], prev
-// 		}
-// 	}
-// }
